@@ -19,7 +19,7 @@ Type_ID varchar(10),
 Foreign key (Type_ID) references PType(Type_ID) On update cascade 
 );
 
-Create table NaturalHabitat( #IK foreign keys should aslo be primary for this table but I dont know hoe to write that so :P
+Create table NaturalHabitat(
 Habitat_Name varchar(30),
 Pokemon_ID char(3),
 Region_ID varchar(11),
@@ -108,7 +108,7 @@ INSERT INTO Stats values (10, 7.7, "Transform","132");
 INSERT INTO Stats values (6, 6, "New Species","151");
 INSERT INTO Stats values (8, 4.6, "Scorching","663");
 
-INSERT INTO Move values("Flash Fire", 3, 1 ); #NGL im guessing on the pp part
+INSERT INTO Move values("Flash Fire", 3, 1 );
 INSERT INTO Move values("Torrent", 3, 1 ); 
 INSERT INTO Move values("Blaze", 4, 1 ); 
 INSERT INTO Move values("Pressure", 10, 1 ); 
